@@ -1,5 +1,3 @@
-# PromptWeaver-RAG-Edition
-PromptWeaver: RAG Edition helps design effective prompts for Traditional, Hybrid, and Agentic RAG systems. It offers templates, system prompts, and best practices to improve accuracy, context use, and LLM reasoning.
 # ✍️ Prompt Engineering Guidelines for RAG
 
 ## 📄 Description
@@ -136,6 +134,109 @@ Question:
 Why is my bill higher this month?
 ```
 - **Final Response**: “Your promo ended in Dec, and 5GB of extra data in Jan led to additional charges.”
+
+---
+
+## 🔐 Ethical Considerations & Privacy
+
+Building RAG systems—especially Agentic ones—raises key ethical concerns:
+
+- **Bias Propagation**: LLMs may amplify bias present in retrieved documents.
+- **Data Privacy**: Long-term memory and context logs may expose user data.
+- **Tool Misuse**: Autonomous agents may make unintended API calls.
+- **Hallucinations**: Confidently wrong answers can mislead users.
+
+### ✅ Mitigations:
+- Apply content filters and bias testing
+- Anonymize or redact user inputs
+- Monitor and log agent behavior
+- Include disclaimers for uncertain output
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code with proper attribution. See `LICENSE` file for details.
+
+---
+
+## 🧱 RAG System Architecture Overview
+
+RAG frameworks come in three flavors: Traditional, Hybrid, and Agentic. Here's how they differ architecturally:
+
+### 📦 Components
+- **Vector Indexer**: Converts docs to embeddings and stores in a vector DB (e.g., FAISS, Qdrant)
+- **Retriever**: Fetches relevant documents using semantic similarity
+- **Prompt Augmenter**: Merges context with the user query
+- **Agent Layer** *(Agentic only)*: Plans tool usage, manages memory, and orchestrates steps
+- **LLM Interface**: Generates responses based on the final prompt
+
+### 🔄 Workflow Comparison
+
+#### Traditional RAG
+`User Query → Vector Search → Augmented Prompt → LLM → Response`
+
+#### Hybrid RAG
+`User Query → Vector Search → Heuristic Filter → Augmented Prompt → LLM`
+
+#### Agentic RAG
+`User Query → Agent → Tool Selection & Retrieval → Prompt Assembly → LLM`
+
+### 📁 Recommended Folder Structure
+```bash
+rag-architecture/
+├── /src
+│   ├── traditional/     # Basic RAG logic
+│   ├── hybrid/          # Rule-enhanced retrieval
+│   └── agentic/         # Agent, planner, memory
+├── /data                # Corpus, vector store
+├── /docs                # Design, prompts, ethics
+└── /tests               # Unit tests, benchmarks
+```
+
+---
+
+## 🛠️ Tools & Skills Used
+
+- **LangChain / LlamaIndex** for RAG orchestration
+- **FAISS / Qdrant** for vector search
+- **OpenAI / Claude / Gemini** as LLMs
+- **Docker / GitHub Actions** for deployment and CI/CD
+- **Python / TypeScript** as implementation languages
+- **Prompt Engineering** for optimized LLM input
+
+---
+
+## 📋 GitHub Project Board Sample
+
+Create a board with columns and sample issues:
+
+### 📌 Columns:
+- **Backlog**: Define agent schema, Create prompt libraries, Setup retrieval eval framework
+- **To Do**: Add support for hybrid heuristics, Configure Qdrant vector store
+- **In Progress**: Agent planner logic, Context chunk size tuning
+- **Review**: Prompt output logging, Agent retry logic
+- **Done**: Traditional RAG baseline working, Basic UI for prompt testing
+
+---
+
+## 💰 Cost Analysis & Budgeting
+
+Estimating infrastructure and tooling costs helps plan and scale a RAG system responsibly. Here’s a high-level breakdown:
+
+### 🧾 Estimated Monthly Budget (for MVP)
+| Resource | Cost (USD) | Notes |
+|---------|------------|-------|
+| OpenAI API (GPT-4) | $100–$300 | Based on token usage for inference |
+| Vector DB (Qdrant/FAISS on cloud) | $20–$80 | For storing embeddings |
+| Compute (Docker, Agents, API) | $50–$150 | On cloud (e.g., AWS EC2, Azure VM) |
+| Storage (object/docs) | $10–$30 | S3, Azure Blob, or equivalent |
+| Monitoring & Logging | $0–$50 | Optional tools like Prometheus, Grafana |
+| CI/CD (GitHub Actions) | Free–$30 | Based on usage |
+| DevOps & Maintenance | $0–$100 | Time/labor if outsourced |
+
+**Total Estimated Monthly Cost:** $180 – $740
+
+> 🔎 Tip: Use open-source LLMs (e.g., Mistral, LLaMA) or local vector stores to reduce cost.
 
 ---
 

@@ -239,6 +239,7 @@ Estimating infrastructure and tooling costs helps plan and scale a RAG system re
 
 ---
 
+
 ##  Next
 - Automate prompt logging and quality scoring
 - Create a library of reusable prompts for standard tasks
@@ -251,4 +252,4 @@ Estimating infrastructure and tooling costs helps plan and scale a RAG system re
 This project is not licensed for use, modification, or redistribution. All rights are reserved by the author. Contact required for any usage beyond reading.
 
 ---
-https://github.com/vinnybellack/PromptWeaver-RAG-Edition/issues/3#issue-3275849808
+[https://github.com/vinnybellack/PromptWeaver-RAG-Edition/issues/3#issue-3275849808](https://github.com/user-attachments/assets/2605547e-b02a-4fcb-b7dd-8b65100b011b)

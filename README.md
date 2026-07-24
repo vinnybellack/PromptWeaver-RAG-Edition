@@ -1,3 +1,20 @@
+# PromptWeaver: RAG Edition
+
+> **Open-source framework for structured Prompt Engineering in Traditional, Hybrid, and Agentic Retrieval-Augmented Generation (RAG) systems.**
+
+[![Documentation](https://img.shields.io/badge/📖-Documentation-blue?style=for-the-badge)](./README.md)
+[![Research Paper](https://img.shields.io/badge/📄-Research-success?style=for-the-badge)](#abstract)
+[![Project Status](https://img.shields.io/badge/Status-Research-orange?style=for-the-badge)]
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)]
+[![Implementation](https://img.shields.io/badge/Implementation-Available%20on%20Request-purple?style=for-the-badge)]
+
+**Architecture** · Traditional RAG · Hybrid RAG · Agentic RAG · Prompt Engineering · AI Agents · Enterprise AI
+
+**Business Applications** · Customer Support · Knowledge Management · Enterprise Search · Document Intelligence · Process Automation · Decision Support
+
+**Industries** · Healthcare · Banking & Financial Services · Insurance · Retail & E-commerce · Telecommunications · Manufacturing · Government · Legal · Education · Human Resources
+
+
 # Abstract
 PromptWeaver: RAG is a modular, prompt-engineering-first framework for optimizing Retrieval-Augmented Generation (RAG) systems. It supports Traditional, Hybrid, and Agentic architectures with structured templates, best practices, and real-world testing strategies. Applied in enterprise scenarios like ETL project explainers and CRM support chatbots, PromptWeaver enhances LLM reasoning, reduces hallucinations, and ensures scalable, explainable AI deployment.
 

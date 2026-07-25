@@ -1,7 +1,9 @@
 # PromptWeaver: RAG Edition
 
 > **Open-source framework for structured Prompt Engineering in Traditional, Hybrid, and Agentic Retrieval-Augmented Generation (RAG) systems.**
+> 
 > **Note:** The production implementation of the PromptWeaver-RAG-Edition is maintained in a private repository. Demonstrations and implementation details are available upon request.
+> 
 [![Documentation](https://img.shields.io/badge/📖-Documentation-blue?style=for-the-badge)](./README.md)
 [![Research Paper](https://img.shields.io/badge/📄-Research-success?style=for-the-badge)](#abstract)
 [![Project Status](https://img.shields.io/badge/Status-Research-orange?style=for-the-badge)]
